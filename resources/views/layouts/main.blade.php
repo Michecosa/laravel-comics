@@ -6,8 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   @vite(['resources/sass/app.scss', 'resources/js/app.js'])
   <title>@yield('titolo', 'Laravel Comics')</title>
+
+
+  <style>
+    .card-img-top {
+      object-fit: cover; 
+      object-position: top;
+    }
+
+    .card-title {
+      letter-spacing: 0.5px;
+    }
+  </style>
+
+
 </head>
-<body>
+<body class="bg-dark">
   <div style="display: flex; flex-direction: column; min-height: 100vh">
     @include('partials.header')
 
