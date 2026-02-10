@@ -6,3 +6,18 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+.jumbotron {
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  min-height: 25rem;
+}
+
+.current-series {
+  top: -4.5rem;
+  left: -0.01rem;
+  z-index: 2;
+}

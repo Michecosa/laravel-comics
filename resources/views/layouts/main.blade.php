@@ -12,6 +12,7 @@
     .card-img-top {
       object-fit: cover; 
       object-position: top;
+      border-radius: 0;
     }
 
     .card-title {
