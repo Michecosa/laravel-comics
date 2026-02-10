@@ -40,9 +40,66 @@
 
 @media (max-width: 768px) {
   .feature-img {
-      height: 40px;
+    height: 40px;
   }
   .feature-item span {
-      font-size: 0.7rem;
+    font-size: 0.7rem;
   }
+}
+
+footer {
+  overflow: hidden;
+}
+
+.footer-main {
+  background-image: url('../img/footer-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.footer-links ul li a {
+  color: #959595;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.footer-links ul li a:hover {
+  color: white;
+}
+
+.footer-logo-bg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-logo-bg img {
+  height: 550px;
+  display: block;
+}
+
+.bg-dark-custom {
+  background-color: #303030;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-social .btn-outline-primary {
+  border-color: #0282f9;
+  border-radius: 0;
+}
+
+.footer-social .btn-outline-primary:hover {
+  background-color: #0282f9;
+}
+
+.social-icons img {
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.social-icons img:hover {
+  filter: brightness(1.5);
 }
