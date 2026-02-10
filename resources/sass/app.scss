@@ -21,3 +21,28 @@
   left: -0.01rem;
   z-index: 2;
 }
+
+.feature-item {
+  white-space: nowrap; 
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.feature-item:hover {
+  transform: scale(1.05);
+}
+
+.feature-img {
+  width: 50px; 
+  max-height: 50px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .feature-img {
+      height: 40px;
+  }
+  .feature-item span {
+      font-size: 0.7rem;
+  }
+}
