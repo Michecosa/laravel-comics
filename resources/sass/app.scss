@@ -7,6 +7,44 @@
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 
+
+header {
+  display: flex;
+  align-items: center;
+
+  .navbar {
+    width: 100%;
+  }
+
+  .nav-link {
+    color: #464646 !important;
+    font-weight: 700;
+    font-size: 0.8rem;
+    position: relative;
+    transition: color 0.2s;
+    border-bottom: 5px solid transparent;
+
+    @media (min-width: 992px) {
+      padding: 47px 0 !important; 
+      
+      &.active {
+        color: #0282f9 !important;
+        border-bottom: 5px solid #0282f9;
+      }
+    }
+
+    @media (max-width: 991px) {
+      padding: 10px 0;
+      &.active {
+        color: #0282f9 !important;
+      }
+    }
+  }
+}
+
+
+
+
 .jumbotron {
   background-image: url("../img/jumbotron.jpg");
   background-size: cover;
@@ -47,6 +85,9 @@
   }
 }
 
+
+
+
 footer {
   overflow: hidden;
 }
@@ -55,7 +96,10 @@ footer {
   background-image: url('../img/footer-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 1;
+}
+
+.footer-links {
+  z-index:5;
 }
 
 .footer-links ul li a {
@@ -83,7 +127,6 @@ footer {
 .bg-dark-custom {
   background-color: #303030;
   position: relative;
-  z-index: 2;
 }
 
 .footer-social .btn-outline-primary {
